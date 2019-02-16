@@ -1,0 +1,10 @@
+
+        IprojectOne2/iproject2.png (Copy the link to view how your project will look like when you are done)
+        This is a simple addition calculator with 20 buttons.
+        What the App can do.
+        You should be able to add two numbers and return the total without error.
+        The app must also welcome the user by typing their name in the text box provided
+        most dimentions and styles are refrence and it can be found in the value folder.
+        The background image has been added to this project.
+        Thank you.
+      

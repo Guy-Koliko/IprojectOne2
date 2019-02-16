@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/username"
+        style="@style/general_width_heigt"
+        android:padding="@dimen/padding"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/welcome_text"
+        android:textStyle="bold"
+        android:text="welcome KOLIKO"/>
+
+    <LinearLayout
+        android:id="@+id/linear"
+        style="@style/linear_in_relative"
+        android:layout_below="@+id/username"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/margin"
+        android:background="@color/screenColor"
+        android:orientation="vertical"
+        android:padding="@dimen/padding">
+
+        <TextView
+            android:id="@+id/screen_one"
+            style="@style/general_width_heigt"
+            android:layout_marginStart="@dimen/marginStart"
+            android:paddingStart="@dimen/paddingStart"
+            android:text="0"
+            android:textSize="@dimen/text_size" />
+
+        <TextView
+            android:id="@+id/plus"
+            style="@style/general_width_heigt"
+            android:layout_marginStart="@dimen/marginStart"
+            android:paddingStart="@dimen/paddingStart"
+            android:text="+"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/screen_two"
+            style="@style/general_width_heigt"
+            android:layout_marginStart="@dimen/marginStart"
+            android:paddingStart="@dimen/paddingStart"
+            android:text="0"
+            android:textSize="@dimen/text_size"/>
+
+        <TextView
+            android:id="@+id/equals"
+            style="@style/general_width_heigt"
+            android:layout_marginStart="30dp"
+            android:paddingStart="80dp"
+            android:text="="
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/screen_total"
+            style="@style/general_width_heigt"
+            android:layout_marginStart="30dp"
+            android:paddingStart="80dp"
+            android:text="0"
+
+            android:textSize="@dimen/text_size"/>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/edit_text"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear"/>
+    <Button
+        android:id="@+id/update"
+        style="@style/general_width_heigt"
+        android:layout_below="@id/linear"
+        android:layout_toRightOf="@id/edit_text"
+        android:text="update"/>
+<Button
+    android:id="@+id/cal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/edit_text"
+    android:text="@string/cal"/>
+
+    <RelativeLayout
+        android:id="@+id/keyboard_one"
+        style="@style/general_width_heigt"
+        android:layout_below="@id/cal">
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/keyboard_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cal"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="20dp">
+
+        <Button
+            android:id="@+id/keyboard_two_1"
+            style="@style/Button_width_height"
+            android:text="@string/one"/>
+        <Button
+            android:id="@+id/keyboard_two_2"
+            style="@style/Button_width_height"
+            android:layout_below="@id/keyboard_two_1"
+            android:text="@string/two"/>
+        <Button
+            android:id="@+id/keyboard_two_3"
+            style="@style/Button_width_height"
+            android:layout_below="@id/keyboard_two_2"
+            android:text="@string/three"/>
+        <Button
+            android:id="@+id/keyboard_two_4"
+            style="@style/Button_width_height"
+            android:layout_toRightOf="@id/keyboard_two_1"
+            android:text="@string/four"/>
+        <Button
+            android:id="@+id/keyboard_two_5"
+            style="@style/Button_width_height"
+            android:layout_toRightOf="@id/keyboard_two_2"
+            android:layout_below="@id/keyboard_two_1"
+            android:text="@string/five"/>
+        <Button
+            android:id="@+id/keyboard_two_6"
+            style="@style/Button_width_height"
+            android:layout_below="@id/keyboard_two_2"
+            android:layout_toRightOf="@id/keyboard_two_3"
+            android:text="@string/six"/>
+        <Button
+            android:id="@+id/keyboard_two_7"
+            style="@style/Button_width_height"
+            android:layout_below="@id/keyboard_two_3"
+            android:text="@string/seven"/>
+        <Button
+            android:id="@+id/keyboard_two_8"
+            style="@style/Button_width_height"
+            android:layout_below="@id/keyboard_two_3"
+            android:layout_toRightOf="@id/keyboard_two_7"
+            android:text="@string/eight"/>
+        <Button
+            android:id="@+id/keyboard_two_9"
+            style="@style/Button_width_height"
+            android:layout_below="@id/keyboard_two_7"
+            android:text="@string/nine"/>
+        <Button
+            android:id="@+id/keyboard_two_10"
+            style="@style/Button_width_height"
+            android:layout_below="@id/keyboard_two_7"
+            android:layout_toRightOf="@id/keyboard_two_9"
+            android:text="@string/ten"/>
+
+        <Button
+            android:id="@+id/keyboard_two_del"
+            style="@style/Button_width_height"
+            android:layout_below="@id/keyboard_two_7"
+            android:layout_toRightOf="@id/keyboard_two_10"
+            android:text="@string/del"/>
+    </RelativeLayout>
+
+</RelativeLayout>
